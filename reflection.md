@@ -23,3 +23,7 @@ Examples:
 
 `--- Reflection Below This Line ---`
 
+I became well acquainted with the streamlit ui capabilities. Now I can convert functions into a web-based app. The hardest part was this:
+
+for x in st.session_state.summaries:
+        st.info(f"{x}", icon='💾')
