@@ -1,7 +1,7 @@
 # Reflection
 
-Student Name:  name
-Sudent Email:  email
+Student Name:  Ezra J Miller
+Sudent Email:  ezmiller@syr.edu
 
 ## Instructions
 
@@ -23,7 +23,11 @@ Examples:
 
 `--- Reflection Below This Line ---`
 
-I became well acquainted with the streamlit ui capabilities. Now I can convert functions into a web-based app. The hardest part was this:
+I became well acquainted with the streamlit ui capabilities. Now I can convert functions into a web-based app, including st.session_state for storing and retrieving values.
 
-for x in st.session_state.summaries:
-        st.info(f"{x}", icon='💾')
+I struggled with iterating over st.session_state.summaries to display stored values correctly. The main issue was ensuring session state persisted across reruns:
+
+        for x in st.session_state.summaries:
+                st.info(f"{x}", icon='💾')
+
+I'm still not sure exactly how Streamlit handles session state persistence and why stored values sometimes disappear. In future, I'll review st.session_state documentation, experiment with initialization methods, and test methods for better state management.
